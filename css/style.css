@@ -118,7 +118,73 @@ body {
   margin-top: 0px;
   font-size: 40px;
 }
-.content .section .img_block {
+
+.about__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 70px;
+}
+.about__block__card {
+  height: 350px;
+  width: 300px;
+  position: relative;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.about__block__card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.about__block__card__front {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(204, 0, 201, 0.25);
+  position: absolute;
+  background-color: #151030;
+  backface-visibility: hidden;
+}
+.about__block__card__front .card__front__image {
+  padding-top: 50px;
+  height: 100px;
+  width: 100px;
+}
+.about__block__card__back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(204, 0, 201, 0.25);
+  position: absolute;
+  background-color: #151030;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.about__block__card__back .card__back__title {
+  font-size: 32px;
+  font-weight: 300;
+  padding: 20px;
+  text-align: center;
+}
+.about__block__card__back .card__back__funny {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.skills__block {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -126,7 +192,7 @@ body {
   gap: 20px;
   margin-bottom: 20px;
 }
-.content .section .img_block img {
+.skills__block__img {
   height: 200px;
   width: 200px;
   gap: 20px;
@@ -137,7 +203,31 @@ body {
   justify-content: center;
   align-items: center;
 }
-.content .section .img_block img:hover {
+.skills__block__img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  animation: wiggle 2s linear;
+}
+
+.projects__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.projects__block__img {
+  height: 200px;
+  width: 200px;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 20%;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects__block__img:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   animation: wiggle 2s linear;
 }
