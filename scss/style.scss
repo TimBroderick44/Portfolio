@@ -41,7 +41,8 @@ $font-color: #fff;
     }
 }
 
-/* Card animation */
+// Card animation 
+//Bouncing in Effect 
 @keyframes show-data {
     50% {
         transform: translateY(-10rem);
@@ -51,12 +52,14 @@ $font-color: #fff;
     }
 }
 
+//Shows the hidden content 
 @keyframes remove-overflow {
     to {
         overflow: initial;
     }
 }
 
+//Bouncing Out Effect
 @keyframes remove-data {
     0% {
         transform: translateY(-7rem);
@@ -69,6 +72,7 @@ $font-color: #fff;
     }
 }
 
+//Hides the hidden content
 @keyframes show-overflow {
     0% {
         overflow: initial;
@@ -82,9 +86,9 @@ $font-color: #fff;
 .flashing-underline {
     font-size: 60px;
     display: inline-block;
-    animation: blink 1s infinite; /* Adjust timing to make it faster or slower */
-    line-height: 1; /* Reduce line height, adjust as needed */
-    vertical-align: bottom; /* Aligns the text to the bottom, adjust as necessary */
+    animation: blink 1s infinite; 
+    line-height: 1; //* Reduce line height, adjust as needed
+    vertical-align: bottom; //* Aligns the text to the bottom, adjust as necessary 
 }
 
 body {
