@@ -29,7 +29,6 @@
     opacity: 1;
   }
 }
-/* Card animation */
 @keyframes show-data {
   50% {
     transform: translateY(-10rem);
@@ -66,9 +65,9 @@
 .flashing-underline {
   font-size: 60px;
   display: inline-block;
-  animation: blink 1s infinite; /* Adjust timing to make it faster or slower */
-  line-height: 1; /* Reduce line height, adjust as needed */
-  vertical-align: bottom; /* Aligns the text to the bottom, adjust as necessary */
+  animation: blink 1s infinite;
+  line-height: 1;
+  vertical-align: bottom;
 }
 
 body {
