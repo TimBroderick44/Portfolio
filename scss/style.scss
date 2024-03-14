@@ -297,8 +297,8 @@ body {
         position: relative;
         overflow: hidden;
         min-width: 350px;
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 400px;
         box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
         &__img {
             height: 100%;
@@ -324,8 +324,8 @@ body {
         }
         &__title {
             font-size: 1.25rem;
-            font-weight: 500;
-            color: violet;
+            font-weight: 900;
+            color: #915eff;
             margin-bottom: 0.75rem;
         }
         &__button {
@@ -386,8 +386,9 @@ body {
             }
         }
         &__front {
+            border-radius: 15px;
             width: 300px;
-            height: 200px;
+            height: 300px;
             transition: 0.5s;
             position: relative;
             background: #333;
@@ -395,10 +396,11 @@ body {
             justify-content: center;
             align-items: center;
             z-index: 1;
-            transform: translateY(100px);
+            transform: translateY(200px);
             &__text {
+                border-radius: 20px;
                 width: 300px;
-                height: 200px;
+                height: 300px;
                 transition: 0.5s;
                 position: relative;
                 background: #fff;
@@ -411,18 +413,12 @@ body {
                 transform: translateY(-100px);
             }
             &__content {
-                h3 {
-                    margin: 10px 0 0;
-                    padding: 0;
-                    color: #fff;
-                    text-align: center;
-                    font-size: 1.5em;
-                }
-                p {
+                p,
+                li {
                     margin: 0;
                     padding: 0;
                     color: #050816;
-                    font-size: 20px;
+                    font-size: 14px;
                 }
             }
         }
@@ -436,6 +432,15 @@ body {
             img {
                 border-radius: 50%;
                 max-width: 100px;
+            }
+            h3 {
+                margin-bottom: 0px;
+            }
+            h4 {
+                font-style: italic;
+                font-weight: 300;
+                font-size: 12px;
+                margin-top: 0px;
             }
             a {
                 margin: 15px 0 0;
