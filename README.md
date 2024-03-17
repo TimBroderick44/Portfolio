@@ -1,6 +1,7 @@
 # Tim's Portfolio (AKA JavaScript-Free Zone)
 
 Welcome to my personal portfolio! 
+https://tim-broderick.com/
 
 My name is Tim Broderick and I have recently started my software development journey with Nology, Australia. 
 This is where I'll keep my projects and show off what I've been learning. 
