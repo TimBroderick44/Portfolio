@@ -1,0 +1,42 @@
+.header {
+    width: 100%;
+    color: $font-color;
+    background-color: $header-color;
+    display: flex;
+    justify-content: center;
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 75%;
+    }
+    &__brand {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: -25px;
+        &__logo {
+            height: 80px;
+            width: 120px;
+        }
+    }
+
+    .nav {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            padding-right: 20px;
+            margin: 0;
+
+            &__item {
+                &--link {
+                    color: $font-color;
+                    text-decoration: none;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}

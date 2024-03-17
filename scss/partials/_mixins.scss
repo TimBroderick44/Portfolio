@@ -1,0 +1,7 @@
+@mixin box-shadow($type) {
+    @if $type == "light" {
+        box-shadow: $shadow-light;
+    } @else if $type == "heavy" {
+        box-shadow: $shadow-heavy;
+    }
+}

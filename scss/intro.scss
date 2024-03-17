@@ -1,0 +1,68 @@
+.intro {
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 70px;
+    }
+    &__card {
+        height: 350px;
+        width: 300px;
+        @include box-shadow(light);
+        transition: transform 1500ms;
+        transform-style: preserve-3d;
+
+        &:hover {
+            @include box-shadow(heavy);
+            cursor: pointer;
+            transform: rotateY(180deg);
+        }
+
+        &__front {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            border-radius: 2rem;
+            box-shadow: 0 0 5px 2px rgba(204, 0, 201, 0.25);
+            position: absolute;
+            background-color: $background-color;
+            backface-visibility: hidden;
+            .card__front__image {
+                padding-top: 50px;
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        &__back {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            border-radius: 2rem;
+            box-shadow: 0 0 5px 2px rgba(204, 0, 201, 0.25);
+            position: absolute;
+            background-color: $background-color;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            .card__back--title {
+                font-size: 32px;
+                font-weight: 300;
+                padding: 20px 20px 0 20px;
+                text-align: center;
+            }
+            .card__back--funny {
+                font-size: 14px;
+                font-style: italic;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.experience {
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 30px;
+    }
+    &__card {
+        position: relative;
+        cursor: pointer;
+        margin: auto;
+        margin-top: 60px;
+        &:hover {
+            .experience__card {
+                &__front {
+                    background: #932e3e;
+                    transform: translateY(-300px);
+                    margin-top: 250px;
+                    &__content {
+                        opacity: 1;
+                    }
+                }
+                &__hidden {
+                    transform: translateY(-300px);
+                }
+            }
+        }
+        &__front {
+            border-radius: 15px;
+            width: 300px;
+            height: 300px;
+            transition: 0.5s;
+            position: relative;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            transform: translateY(0px);
+            overflow: visible;
+            &__content {
+                opacity: 0.2;
+                transition: 0.5s;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &__img {
+                    border-radius: 50%;
+                    max-width: 100px;
+                }
+                &--business {
+                    margin-bottom: 0px;
+                }
+                &--role {
+                    font-style: italic;
+                    font-weight: 300;
+                    font-size: 12px;
+                    margin-top: 0px;
+                }
+            }
+        }
+        &__hidden {
+            border-radius: 20px;
+            width: 300px;
+            height: 300px;
+            transition: 0.5s;
+            position: absolute;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            transform: translateY(-300px);
+            &__content {
+                &--title {
+                    font-style: italic;
+                    color: #050816;
+                    margin: 0;
+                    padding: 0;
+                }
+                &--duties {
+                    margin: 0;
+                    padding: 0;
+                    color: #050816;
+                    font-size: 14px;
+                }
+                &--link {
+                    border-radius: 15px;
+                    text-decoration: none;
+                    font-weight: 900;
+                    color: #333;
+                    padding: 7px;
+                    border: 1px solid #333;
+                    &:hover {
+                        background: #333;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

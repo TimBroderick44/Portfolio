@@ -1,0 +1,72 @@
+.projects {
+    margin-top: 50px;
+    &__block {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        column-gap: 10px;
+        row-gap: 40px;
+    }
+    &__article {
+        position: relative;
+        overflow: hidden;
+        min-width: 350px;
+        width: 300px;
+        height: 400px;
+        box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+        &__img {
+            height: 100%;
+            width: 100%;
+            border-radius: 1.5rem;
+        }
+    }
+    // Animations -- See @keyframes for information on how it works.
+    &__article:hover &__info {
+        animation: show-data 1s forwards;
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+    &__article:hover {
+        animation: remove-overflow 1s forwards;
+    }
+    &__article:not(:hover) {
+        animation: show-overflow 2s forwards;
+    }
+    &__article:not(:hover) &__info {
+        animation: remove-data 1.4s forwards;
+    }
+    &__info {
+        background-color: hsl(0, 0%, 100%);
+        padding: 1.5rem 2rem;
+        box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+        border-radius: 1rem;
+        position: absolute;
+        bottom: -9rem;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        opacity: 0;
+        transition: opacity 1s 1s;
+        width: 220px;
+        &__description {
+            color: #050816;
+        }
+        &--title {
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: #915eff;
+            margin-bottom: 0.75rem;
+        }
+        &__button {
+            text-decoration: none;
+            font-size: 0.813rem;
+            font-weight: 500;
+            color: hsl(82, 60%, 28%);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
