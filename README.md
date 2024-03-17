@@ -1,6 +1,7 @@
-# Tim's Portfolio AKA The JavaScript-Free Zone
+# Tim's Portfolio (AKA JavaScript-Free Zone)
 
 Welcome to my personal portfolio! 
+https://tim-broderick.com/
 
 My name is Tim Broderick and I have recently started my software development journey with Nology, Australia. 
 This is where I'll keep my projects and show off what I've been learning. 
@@ -11,10 +12,9 @@ Thanks for stopping by and having a look at my portfolio! I hope you enjoy it!
 It utilises HTML & SASS to create an interactive display of my skills and achievements. 
 [No JS was harmed in the production of this website - no JS was even used. As a challenge, and wanting to know more about CSS animations, I decided not to use any JS]
 
-***Throughout creating this portfolio, here are some of the lessons I learnt:
-***
+__Throughout creating this portfolio, here are some of the lessons I learnt:__
 
-## Embracing CSS Animations and Transitions:
+## CSS Animations and Transitions:
 
 Over countless hours of experimentation, I learned how to create complex sequences that are engaging and entertaining while only using CSS.
 I learned a lot about keyframes and transitions - there is a lot that CSS can do straight out of the box. 
