@@ -222,6 +222,7 @@
   row-gap: 40px;
 }
 .projects__article {
+  border-radius: 1.5rem;
   position: relative;
   overflow: hidden;
   min-width: 350px;
